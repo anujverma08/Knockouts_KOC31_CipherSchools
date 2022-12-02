@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Management</title>
+    <link rel="stylesheet" href="style-travel.css">
+
+</head>
+<body>
+    <h1>TRAVEL WEBSITE</h1>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="">About Project</a>
+        <a href="">Gallery</a>
+        <a href="">Register</a>
+        <a href="login.html">Login</a>   
+        <a href="">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <p id="c1"> Welcome to Travel Mangement Website</p>
+    <p id="c1">Travel with us</p>
+
+
+    <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img src="images/img_woods_wide.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <img src="images/img_5terre_wide.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img src="images/img_mountains_wide.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img src="images/img_lights_wide.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img src="images/img_nature_wide.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img src="images/img_snow_wide.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+            
+  </div>
+        <div>
+            <hr>
+            
+               
+            <p id="c1"> Choose a Place</p>  
+            
+
+            <div class="container1">
+                <img src="images/tj.jpg" alt="Taj Mahal"  class="image">
+                <div class="overlay">Taj Mahal,India</div>
+              </div>
+              <br>
+              <br>
+            <div class="container1">
+                <img src="images/ef.jpg" alt="Eiffel Tower, Paris" class="image">
+                <div class="overlay">Eiffel Tower, Paris</div>
+            </div>
+            <br>
+              <br>
+            <div class="container1">
+                <img src="images/mj.jpg" alt="Mount Kilimanjaro" class="image">
+                <div class="overlay">Mount Kilimanjaro</div>
+            </div>
+            <br>
+              <br>
+            <div class="container1">
+                <img src="images/op.jpg" alt="Sydney Opera House" class="image">
+                <div class="overlay">Sydney Opera House</div>
+            </div>
+            <br>
+            <br>
+            <div class="container1">
+                <img src="images/ng.jpg" alt="Niagara Falls, Canada & USA" class="image">
+                <div class="overlay">Niagara Falls</div>
+            </div>
+           
+        </div>
+
+        <div>
+            <hr> 
+            <p  id="c1">
+                Latest Travel News
+            </p>
+            <ol>
+            <li>Goa-like beach shacks to come up across coastal areas in India</li>
+            <li>All that you need to know about Mumbai-Alibaug Ro-Ro ferry</li>
+            <li>Schengen visa: Germany relaxes visa appointment rules for Indian tourists</li>
+            <li>December is for Mussoorie Winterline Carnival 2022, find out all about it here</li>
+            <li>COVID travel update: Govt. relaxes norms; face masks no longer mandatory in air</li>
+            <li>New Zealand to soon become a dark sky nation</li>
+            </ol>
+        
+            </p>
+        </div>
+
+
+        <footer>
+           
+
+        </footer>
+
+
+
+      
+      <script>
+    
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</body>
+</html>
