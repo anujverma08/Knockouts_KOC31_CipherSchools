@@ -52,7 +52,7 @@ cursor: pointer;
 .next {
 cursor: pointer;
 position: absolute;
-top: 40%;
+top: 10%;
 width: auto;
 padding: 16px;
 margin-top: -50px;
@@ -118,6 +118,8 @@ opacity: 1;
       font: italic small-caps bold 16px/2 cursive;
       text-align: center;
       font-size: large;
+      color: #f1f1f1;
+      text-shadow: #333;
 }
 
 /* Container needed to position the overlay. Adjust the width as needed */
@@ -181,6 +183,18 @@ h1{
     font: italic small-caps bold 16px/2 cursive;
     text-align: center;
     font-size: xx-large;
-    color: black;
+    color:#04AA6D    ;
 
 }
+
+body {
+    background-image: url('images/bg.jpg');
+    background-size:contain;
+    backdrop-filter: blur(1px);
+    backdrop-filter: brightness(-5);
+    
+    
+}
+
+  
+  

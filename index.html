@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Management</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
 
 </head>
 <body>
-    <h1>TRAVEL WEBSITE</h1>
+    <div class="bg-image"></div>
+    <h1>TRAVEL  WEBSITE</h1>
     <div class="topnav">
         <a class="active" href="#home">Home</a>
-        <a href="">About Project</a>
-        <a href="">Gallery</a>
-        <a href="">Register</a>
+        <a href="about.html">About Project</a>
+        <a href="#gallery">Gallery</a>
         <a href="login.html">Login</a>   
-        <a href="">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -105,17 +106,7 @@
               <br>
             <div class="container1">
                 <img src="images/ef.jpg" alt="Eiffel Tower, Paris" class="image">
-                <div class="overlay">Eiffel Tower, Paris</div>
-            </div>
-            <br>
-              <br>
-            <div class="container1">
-                <img src="images/mj.jpg" alt="Mount Kilimanjaro" class="image">
-                <div class="overlay">Mount Kilimanjaro</div>
-            </div>
-            <br>
-              <br>
-            <div class="container1">
+
                 <img src="images/op.jpg" alt="Sydney Opera House" class="image">
                 <div class="overlay">Sydney Opera House</div>
             </div>
@@ -150,6 +141,7 @@
            
 
         </footer>
+        
 
 
 
@@ -187,6 +179,9 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+<footer>
+
+</footer>
 
 
 </body>
